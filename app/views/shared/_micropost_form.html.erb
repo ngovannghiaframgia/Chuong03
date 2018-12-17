@@ -6,7 +6,7 @@
     <%= f.file_field :picture, accept: "image/jpeg,image/gif,image/png,jpg", id: "file", class: "img"%>
   </div>
 
-  <%= f.text_area :content, minlength: 20,
+  <%= f.text_area :content, minlength: Settings.micropost.max_text_area,
     required: true, class: "form-control ckeditor", id: "ckeditor"%>
 
   <%= f.submit t(".post"), class: "btn btn-primary" %>

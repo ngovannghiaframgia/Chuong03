@@ -39,6 +39,8 @@ en:
     profile_updated: "Profile updated"
     please_log_in: "Please log in."
     please_check_your_email: "Please check your email to activate your account."
+    following: "Following"
+    followers: "Followers"
     new:
       Sign_up: "Sign up"
       create_my_account: "Create my account"
@@ -59,6 +61,13 @@ en:
       you_sure: "You sure?"
       delete: "delete"
     show:
+      microposts: "Microposts"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      view_my_profile: "view my profile"
       microposts: "Microposts"
   layouts:
     header:
@@ -82,6 +91,9 @@ en:
       post: "Post"
       compose_new_micropost: "Compose new micropost..."
       maximum_5MB: "Maximum file size is 5MB. Please choose a smaller file."
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     invalid_email_password: "Invalid email/password combination"
     not_activated_check_your_email: "Account not activated.Check your email for the activation link."
@@ -107,6 +119,7 @@ en:
     edit:
       reset_password: "Reset password"
       update_password: "Update password"
+      confirmation: "Confirmation"
   user_mailer:
     account_activation:
       account_activation: "Account activation"

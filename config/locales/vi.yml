@@ -41,6 +41,8 @@ vi:
     profile_updated: "Hồ sơ cá nhân đã cập nhật"
     please_log_in: "Xin vui lòng đăng nhập."
     please_check_your_email: "Hãy kiểm tra email của bạn để kích hoạt tài khoản của bạn."
+    following: "Đang Theo Dõi"
+    followers: "Người Theo Dõi"
     new:
       Sign_up: "Đăng ký"
       create_my_account: "Tạo tài khoản của tôi"
@@ -60,6 +62,13 @@ vi:
     user:
       you_sure: "Bạn chắc chắn?"
       delete: "xóa bỏ"
+    follow:
+      follow: "Theo Dõi"
+    unfollow:
+      unfollow: "Hủy Theo Dõi"
+    show_follow:
+      view_my_profile: "xem hồ sơ của tôi"
+      microposts: "Microposts"
   layouts:
     header:
       Log_in: "Đăng Nhập"
@@ -82,6 +91,9 @@ vi:
       post: "Đăng"
       compose_new_micropost: "Soạn micropost mới ..."
       maximum_5MB: "Kích thước tệp tối đa là 5MB. Vui lòng chọn một tập tin nhỏ hơn."
+    stats:
+      following: "Đang Theo Dõi"
+      followers: "Người Theo Dõi"
   sessions:
     not_activated_check_your_email: "Tài khoản chưa được kích hoạt.Kiểm tra email của bạn cho các liên kết kích hoạt."
     invalid_email_password: "Kết hợp email/mật khẩu không hợp lệ"
@@ -101,6 +113,7 @@ vi:
     cant_be_empty: "không thể để trống"
     password_reset: "Mật khẩu đã được đặt lại."
     password_expired: "Đặt lại mật khẩu đã hết hạn."
+    confirmation: "Xác nhận"
     new:
       forgot_password: "Quên mật khẩu"
       submit: "Gửi"
@@ -111,6 +124,7 @@ vi:
     account_activation: "Kích hoạt tài khoản"
     password_reset: "Đặt lại mật khẩu"
     account_activation:
+      account_activation: "Kích hoạt tài khoản"
       sample_App: "Ứng Dụng Mẫu"
       hi: "Chào"
       welcome_to: "Chào mừng bạn đến với Ứng dụng mẫu! Nhấp vào liên kết dưới đây để kích hoạt tài khoản của bạn:"
