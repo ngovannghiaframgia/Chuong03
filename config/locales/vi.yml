@@ -2,6 +2,8 @@ vi:
   hello: "xin chào"
   Ruby_on_Rails_Tutorial_Sample_App: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
   title: "têu đề"
+  welcome_to_the_sample_app!: "Chào mừng bạn đến với Ứng Dụng Mẫu!"
+  not_found: "Không tìm thấy!"
   static_pages:
     Log_in: "Đăng Nhập"
     home:
@@ -34,6 +36,10 @@ vi:
     new:
       Sign_up: "Đăng Ký"
       This_will_be_a_signup_page_for_new_users: "Đây sẽ là trang đăng ký cho người dùng mới"
+      confirmation: "Xác nhận"
+      create_my_account: "Tạo tài khoản của tôi"
+      password: "Mật khẩu"
+      name: "Tên"
   layouts:
     header:
       Log_in: "Đăng Nhập"
@@ -41,3 +47,6 @@ vi:
       by: "bởi"
       New: "Tin Mới"
       Michael_Hartl: "Michael Hartl"
+  shared:
+    error_messages:
+      the_form_contains: "Biểu mẫu có chứa"
