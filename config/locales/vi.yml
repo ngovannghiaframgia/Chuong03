@@ -81,12 +81,16 @@ vi:
       New_user: "Tài khoản mới"
       remember_me: "Hãy nhớ tôi trên máy tính này"
       password: "Mật khẩu"
+      forgot_password: "(Quên mật khẩu)"
   account_activations:
     account_activated: "Tài khoản được kích hoạt!"
     invalid_activation: "Liên kết kích hoạt không hợp lệ"
   password_resets:
     email_sent: "Email được gửi với hướng dẫn đặt lại mật khẩu Email được gửi với hướng dẫn đặt lại mật khẩu"
     email_not_found: "Không tìm thấy địa chỉ email"
+    cant_be_empty: "không thể để trống"
+    password_reset: "Mật khẩu đã được đặt lại."
+    password_expired: "Đặt lại mật khẩu đã hết hạn."
     new:
       forgot_password: "Quên mật khẩu"
       submit: "Gửi"
@@ -94,23 +98,17 @@ vi:
       reset_password: "Đặt lại mật khẩu"
       update_password: "Cập nhật mật khẩu"
   user_mailer:
-    account_activation.html:
+    account_activation: "Kích hoạt tài khoản"
+    password_reset: "Đặt lại mật khẩu"
+    account_activation:
       sample_App: "Ứng Dụng Mẫu"
       hi: "Chào"
       welcome_to: "Chào mừng bạn đến với Ứng dụng mẫu! Nhấp vào liên kết dưới đây để kích hoạt tài khoản của bạn:"
       activate: "Kích Hoạt"
-    account_activation.text:
-      hi: "Chào"
-      welcome_to: "Chào mừng bạn đến với Ứng dụng mẫu! Nhấp vào liên kết dưới đây để kích hoạt tài khoản của bạn:"
-    password_reset.html:
+    password_reset:
       password_reset: "Đặt lại mật khẩu"
       to_reset: "Để đặt lại mật khẩu của bạn, nhấp vào liên kết dưới đây:"
       reset_password: "Đặt lại mật khẩu"
-      this_link: "Liên kết này sẽ hết hạn trong hai giờ."
-      if_you_did: "Nếu bạn không yêu cầu đặt lại mật khẩu,
-       vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
-    password_reset.text:
-      to_reset: "Để đặt lại mật khẩu của bạn, nhấp vào liên kết dưới đây:"
       this_link: "Liên kết này sẽ hết hạn trong hai giờ."
       if_you_did: "Nếu bạn không yêu cầu đặt lại mật khẩu,
        vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
