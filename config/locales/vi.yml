@@ -3,8 +3,9 @@ vi:
   Ruby_on_Rails_Tutorial_Sample_App: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
   title: "têu đề"
   static_pages:
+    Log_in: "Đăng Nhập"
     home:
-      home: "trang chủ"
+      home: "Trang Chủ"
       tutorial_ruby: "hướng dẫn về Ruby on Rails"
       sample_application: "ứng dụng mẫu"
       sample_app: "ứng dụng mẫu"
@@ -19,8 +20,9 @@ vi:
       screencast_series: "loạt screencast"
       to_teach_web_development_with: "để dạy phát triển web với"
       This_is_the_sample_application_for_the_tutorial: "Đây là ứng dụng mẫu cho hướng dẫn"
+      Ruby_on_Rails: "Ruby on Rails"
     help:
-      Help: "Help"
+      Help: "Hỗ Trợ"
       Get_help_on_the_Ruby_on_Rails_Tutorial_at_the : "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
       Rails_Tutorial_help_section : "Phần trợ giúp của Rails Tutorial"
       To_get_help_on_this_sample_app,_see_the: "Để nhận trợ giúp về ứng dụng mẫu này, hãy xem"
@@ -30,5 +32,12 @@ vi:
       contact_page: "trang liên hệ"
   users:
     new:
-      Sign_up: "Đăng ký"
+      Sign_up: "Đăng Ký"
       This_will_be_a_signup_page_for_new_users: "Đây sẽ là trang đăng ký cho người dùng mới"
+  layouts:
+    header:
+      Log_in: "Đăng Nhập"
+    footer:
+      by: "bởi"
+      New: "Tin Mới"
+      Michael_Hartl: "Michael Hartl"
