@@ -4,10 +4,11 @@ class UsersController < ApplicationController
   before_action :load_user, only: %i(show edit update destroy correct_user)
 
   def index
-    @users = User.activated.order_desc.page(params[:page]).per Settings.user.record_page
+    @users = User.order_asc.activated.page(params[:page]).per Settings.user.record_page
   end
 
   def show
+    @microposts = @user.microposts.micropost_desc.page(params[:page]).per Settings.user.record_page
   end
 
   def new
@@ -15,7 +16,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.new user_params
     if @user.save
       @user.send_activation_email
       flash[:info] = t ".please_check_your_email"
@@ -23,9 +24,6 @@ class UsersController < ApplicationController
     else
       render :new
     end
-  end
-
-  def show
   end
 
   def edit
@@ -52,13 +50,6 @@ class UsersController < ApplicationController
   private
   def user_params
     params.require(:user).permit :name, :email, :password,:password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t ".please_log_in"
-    redirect_to login_url
   end
 
   def correct_user
