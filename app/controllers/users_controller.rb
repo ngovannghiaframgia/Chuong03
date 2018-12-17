@@ -7,6 +7,9 @@ class UsersController < ApplicationController
     @users = User.activated.order_desc.page(params[:page]).per Settings.user.record_page
   end
 
+  def show
+  end
+
   def new
     @user = User.new
   end
@@ -14,9 +17,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      log_in @user
-      flash[:success] = t "welcome_to_the_sample_app!"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".please_check_your_email"
+      redirect_to root_url
     else
       render :new
     end
