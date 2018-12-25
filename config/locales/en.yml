@@ -49,6 +49,7 @@ en:
       screencast_series : "screencast series"
       to_teach_web_development_with: "to teach web development with"
       This_is_the_sample_application_for_the_tutorial: "This is the sample application for the tutorial"
+      Ruby_on_Rails: "Ruby on Rails"
     help:
       Help: "Help"
       Get_help_on_the_Ruby_on_Rails_Tutorial_at_the : "Get help on the Ruby on Rails Tutorial at the"
@@ -62,3 +63,10 @@ en:
     new:
       Sign_up: "Sign up"
       This_will_be_a_signup_page_for_new_users: "This will be a signup page for new users"
+  layouts:
+    header:
+      Log_in: "Log in"
+    footer:
+      by: "by"
+      New: "New"
+      Michael_Hartl: "Michael Hartl"
