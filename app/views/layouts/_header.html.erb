@@ -6,7 +6,13 @@
         <li><%= link_to t("static_pages.home.home"), root_path %></li>
         <li><%= link_to t("static_pages.help.Help"), help_path %></li>
         <li><%= link_to t(".Log_in"), "#" %></li>
+        <li>
+          <p style="margin-top: 13px;">
+            <%= link_to "EN", locale:"en" %> / <%= link_to "VN", locale:"vi" %></p>
+        </li>
+        <div style="clear:both"></div>
       </ul>
+      <div style="clear:both"></div>
     </nav>
   </div>
 </header>
