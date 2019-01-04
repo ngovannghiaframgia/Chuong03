@@ -72,6 +72,11 @@ en:
   layouts:
     header:
       Log_in: "Log in"
+      Account: "Account"
+      Users: "Users"
+      Profile: "Profile"
+      Settings: "Settings"
+      Log_out: "Log out"
     footer:
       by: "by"
       New: "New"
@@ -79,3 +84,9 @@ en:
   shared:
     error_messages:
       the_form_contains: "The form contains"
+  sessions:
+    invalid_email_password: "Invalid email/password combination"
+    new:
+      Log_in: "Log in"
+      Sign_up_now: "Sign up now!"
+      New_user: "New user"

@@ -43,6 +43,11 @@ vi:
   layouts:
     header:
       Log_in: "Đăng Nhập"
+      Account: "Tài khoản"
+      Users: "Người dùng"
+      Profile: "Cá Nhân"
+      Settings: "Cài đặt"
+      Log_out: "Đăng Xuất"
     footer:
       by: "bởi"
       New: "Tin Mới"
@@ -50,3 +55,9 @@ vi:
   shared:
     error_messages:
       the_form_contains: "Biểu mẫu có chứa"
+  sessions:
+    invalid_email_password: "Kết hợp email/mật khẩu không hợp lệ"
+    new:
+      Log_in: "Đăng Nhập"
+      Sign_up_now: "Đăng ký ngay!"
+      New_user: "Tài khoản mới"
