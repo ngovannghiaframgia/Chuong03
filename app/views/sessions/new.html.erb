@@ -1,5 +1,5 @@
 <% provide(:title, t(".Log_in")) %>
-<h1><% t "Log_in"%></h1>
+<h1><% t ".Log_in"%></h1>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
@@ -8,8 +8,13 @@
       <%= f.label :email %>
       <%= f.email_field :email, class: "form-control" %>
 
-      <%= f.label :password %>
+      <%= f.label :password, t(".password")%>
       <%= f.password_field :password, class: "form-control" %>
+
+      <%= f.label :remember_me, class: "checkbox inline" do %>
+        <%= f.check_box :remember_me %>
+        <span><%= t ".remember_me" %></span>
+      <% end %>
 
       <%= f.submit t(".Log_in"), class: "btn btn-primary" %>
     <% end %>

@@ -34,7 +34,7 @@ vi:
       contact_page: "trang liên hệ"
   users:
     new:
-      Sign_up: "Đăng Ký"
+      Sign_up: "Đăng ký"
       This_will_be_a_signup_page_for_new_users: "Đây sẽ là trang đăng ký cho người dùng mới"
       confirmation: "Xác nhận"
       create_my_account: "Tạo tài khoản của tôi"
@@ -61,3 +61,5 @@ vi:
       Log_in: "Đăng Nhập"
       Sign_up_now: "Đăng ký ngay!"
       New_user: "Tài khoản mới"
+      remember_me: "Hãy nhớ tôi trên máy tính này"
+      password: "Mật khẩu"
