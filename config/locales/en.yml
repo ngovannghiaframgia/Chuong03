@@ -31,13 +31,29 @@ en:
       Contact_the_at_the: "Contact the Ruby on Rails Tutorial about the sample app at the"
       contact_page: "contact page"
   users:
+    user_deleted: "User deleted"
+    deleted_failed: "Delete failed"
+    profile_updated: "Profile updated"
+    please_log_in: "Please log in."
     new:
       Sign_up: "Sign up"
-      This_will_be_a_signup_page_for_new_users: "This will be a signup page for new users"
-      confirmation: "Confirmation"
       create_my_account: "Create my account"
+      This_will_be_a_signup_page_for_new_users: "This will be a signup page for new users"
+    edit:
+      edit_user: "Edit user"
+      update_your_profile: "Update your profile"
+      name: "name"
+      change: "change"
+      save_changes: "Save changes"
+    form:
+      confirmation: "Confirmation"
       password: "Password"
       name: "Name"
+    index:
+      all_users: "All users"
+    user:
+      you_sure: "You sure?"
+      delete: "delete"
   layouts:
     header:
       Log_in: "Log in"

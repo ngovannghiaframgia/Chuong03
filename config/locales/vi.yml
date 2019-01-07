@@ -33,13 +33,29 @@ vi:
       Contact_the_at_the: "Liên hệ với Hướng dẫn về Ruby on Rails về ứng dụng mẫu tại"
       contact_page: "trang liên hệ"
   users:
+    user_deleted: "Người dùng đã xóa"
+    deleted_failed: "Xoá thất bại"
+    profile_updated: "Hồ sơ cá nhân đã cập nhật"
+    please_log_in: "Xin vui lòng đăng nhập."
     new:
       Sign_up: "Đăng ký"
-      This_will_be_a_signup_page_for_new_users: "Đây sẽ là trang đăng ký cho người dùng mới"
-      confirmation: "Xác nhận"
       create_my_account: "Tạo tài khoản của tôi"
+      This_will_be_a_signup_page_for_new_users: "Đây sẽ là trang đăng ký cho người dùng mới"
+    edit:
+      edit_user: "Sửa Người Dùng"
+      update_your_profile: "Cập nhật hồ sơ của bạn"
+      name: "Tên"
+      change: "thay đổi"
+      save_changes: "Lưu thay đổi"
+    form:
+      confirmation: "Xác nhận"
       password: "Mật khẩu"
       name: "Tên"
+    index:
+      all_users: "Tất cả người dùng"
+    user:
+      you_sure: "Bạn chắc chắn?"
+      delete: "xóa bỏ"
   layouts:
     header:
       Log_in: "Đăng Nhập"
