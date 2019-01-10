@@ -4,5 +4,6 @@ user:
   min_password: 6
   record_page: 20
   gravatar_user: 50
+  time_token: 2
 users_helper:
   size: 80
