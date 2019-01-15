@@ -1,6 +1,7 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'color';
+@import 'font-awesome';
 
 /* mixins, variables, etc. */
 
@@ -229,4 +230,112 @@ input {
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
   }
+}
+
+/* microposts */
+
+.microposts {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+
+/* upload images */
+
+.hidden, #uploadImg:not(.hidden) + label{
+  display: none;
+}
+
+#file{
+  display: none;
+  margin: 0 auto;
+}
+
+#upload{
+  display: block;
+  padding: 10px 25px;
+  border: 0;
+  margin: 0 auto;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  background: #216e69;
+  color: #fff;
+  outline: none;
+  transition: .3s ease-in-out;
+  &:hover, &:focus{
+    background: #1AA39A;
+  }
+  &:active{
+    background: #13D4C8;
+    transition: .1s ease-in-out;
+  }
+}
+
+.img{
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+.input1 {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  img {
+    width: 100%;
+  }
+}
+
+#new_micropost {
+  margin-top: 10em;
+}
+
+.Uploaded {
+  width: 100%;
+}
+
+.btn-custom {
+  float: right;
 }

@@ -9,7 +9,12 @@ gem "bcrypt","3.1.12"
 gem "ffaker"
 gem "kaminari"
 gem "bootstrap4-kaminari-views"
+gem "carrierwave", "1.2.2"
+gem "mini_magick", "4.7.0"
+gem "ckeditor"
 gem "rails-i18n"
+gem "i18n-js"
+gem "font-awesome-rails"
 gem "config"
 gem "figaro"
 gem "jquery-rails"
@@ -41,6 +46,7 @@ end
 
 group :production do
   gem "pg", "0.18.4"
+  gem "fog", "1.42"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]

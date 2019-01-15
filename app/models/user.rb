@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
   attr_reader :remember_token, :activation_token, :reset_token
   before_save   :downcase_email
   before_create :create_activation_digest
@@ -11,7 +12,7 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true, length: {minimum: Settings.user.min_password}, allow_nil: true
 
-  scope :order_desc, -> {order id: :desc }
+  scope :order_asc, -> {order id: :asc }
   scope :activated, -> {where activated: true}
 
   def User.new_token
@@ -29,10 +30,6 @@ class User < ApplicationRecord
     BCrypt::Password.new(digest).is_password?(token)
   end
 
-  def forget
-    update remember_digest: nil
-  end
-
   def current_user? user
     self == user
   end
@@ -48,9 +45,22 @@ class User < ApplicationRecord
     UserMailer.account_activation(self).deliver_now
   end
 
+  def create_activation_digest
+    @activation_token  = User.new_token
+    self.activation_digest = User.digest(activation_token)
+  end
+
+  def activate
+    update_columns(activated: true, activated_at: Time.zone.now)
+  end
+
+  def forget
+    update remember_digest: nil
+  end
+
   def create_reset_digest
     @reset_token = User.new_token
-    update_columns(reset_digest:  User.digest(reset_token), reset_sent_at: Time.zone.now)
+    update_columns(reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now)
   end
 
   def send_password_reset_email
@@ -61,13 +71,8 @@ class User < ApplicationRecord
     reset_sent_at < Settings.user.time_token.hours.ago
   end
 
-  def create_activation_digest
-    @activation_token  = User.new_token
-    self.activation_digest = User.digest(activation_token)
-  end
-
-  def activate
-    update_columns(activated: true, activated_at: Time.zone.now)
+  def feed
+    User.first.microposts
   end
 
   private
