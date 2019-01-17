@@ -14,3 +14,6 @@ micropost:
   size_picture: 5
   width_picture: 300
   height_picture: 300
+  max_text_area: 20
+follow:
+  gravatar_size: 30

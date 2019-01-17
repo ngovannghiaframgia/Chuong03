@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: %i(index edit update destroy)
+  before_action :logged_in_user, only: %i(index edit update destroy following followers)
   before_action :admin_user, only: :destroy
   before_action :load_user, only: %i(show edit update destroy correct_user)
 
@@ -9,6 +9,11 @@ class UsersController < ApplicationController
 
   def show
     @microposts = @user.microposts.micropost_desc.page(params[:page]).per Settings.user.record_page
+    if current_user.following?(@user)
+      @active_relationships_find_by = current_user.active_relationships.find_by followed_id: @user.id
+    else
+      @active_relationships_build = current_user.active_relationships.build
+    end
   end
 
   def new
@@ -49,15 +54,16 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit :name, :email, :password,:password_confirmation
+    params.require(:user).permit :name, :email, :password, :password_confirmation
   end
 
   def correct_user
-    redirect_to root_url unless current_user.current_user? @user
+    @user = User.find(params[:id])
+    redirect_to(root_url) unless current_user.current_user?(@user)
   end
 
   def admin_user
-    redirect_to root_url unless current_user.admin?
+    redirect_to(root_url) unless current_user.admin?
   end
 
   def load_user
